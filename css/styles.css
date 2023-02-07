@@ -64,3 +64,45 @@ img {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
+
+.products .item:hover .image img {
+  animation: motionProduct 2s infinite;
+}
+
+@mediaframes motionProduct {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+@media screen and (min-width: 568px) {
+  .products .item .image {
+    transition: transform 0.3s;
+  }
+
+  .products .item:hover .image {
+    transform: scale(1.25) translate3d(30%, -20%, 0);
+  }
+
+  .products .item .image::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    top: 25%;
+    right: 0;
+    filter: blur(90px);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .products .item:hover .image::before {
+    opacity: 0.75;
+  }
+}
