@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+:root {
+  --primary: #f55951;
+  --secondary: #361d32;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--white);
+  background-color: #543c52;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.products .item {
+  position: relative;
+  max-width: 350px;
+  padding: 30px;
+  background-color: var(--secondary);
+  box-shadow: 0 10px 36px 0 rgb(0 0 0 /16%);
+}
+
+.products .item .brand {
+  width: 60px;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+}
+
+.products .item .title h2 {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
