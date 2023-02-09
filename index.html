@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,43 +7,67 @@
     <title>Card Nike</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
   </head>
   <body>
-    <div id="page" class="site">
-      <div class="products">
-        <div class="item">
-          <div class="title">
-            <div class="brand">
-              <h2>Nike Shoes 075</h2>
+    <div class="container">
+      <div class="card-wrapper">
+        <div class="card">
+          <div class="card-top">
+            <img class="logo" src="./img/nike-logo.png" />
+            <div class="card-top-text">
+              <h1>Air Structure</h1>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+              </p>
             </div>
-            <div class="image">
-              <img src="./img/shoe2.png" />
+            <img class="shoe-1" src="./img/shoe1.png" />
+            <img class="shoe-2" src="./img/shoe2.png" hidden />
+          </div>
+          <div class="card-bottom">
+            <h1>Air Structure</h1>
+            <div class="badge">New</div>
+            <h3>Running Colletions</h3>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
             </div>
-            <div class="meta">
-              <div class="size">
-                <input type="radio" name="size" id="45" />
-                <label for="45">45</label>
-                <input type="radio" name="size" id="46" />
-                <label for="47">46</label>
-                <input type="radio" name="size" id="47" />
-                <label for="47">47</label>
-                <input type="radio" name="size" id="48" />
-                <label for="48">48</label>
+            <div class="size">
+              <h4>Size</h4>
+              <div class="sizes">
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span>10</span>
+                <span>11</span>
               </div>
-              <div class="price">$299.89</div>
-              <div class="autocart">
-                <button>
-                  <span>add to cart</span>
-                  <i class="ri-arrow-right-line"></i>
-                </button>
+            </div>
+            <div class="color">
+              <h4>Color</h4>
+              <div class="colors">
+                <div class="color-1"></div>
+                <div class="color-2"></div>
               </div>
+            </div>
+            <div class="price">
+              <span>Usd</span>
+              <span>350,00</span>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
